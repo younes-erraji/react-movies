@@ -1,0 +1,11 @@
+npm i express mysql body-parser
+
+npm i nodemon
+
+// Run the app
+node index
+
+// Run the Development server
+npm run startDev
+
+npm i cors

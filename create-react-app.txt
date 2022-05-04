@@ -1,0 +1,2 @@
+// Create a react app in the current directory
+npx create-react-app .

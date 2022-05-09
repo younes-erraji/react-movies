@@ -22,7 +22,7 @@ const App = () => {
       movie,
       movieDesc,
       movieRate,
-    });
+    }).then(() => console.log("successfully inserted"));
   };
 
   return (

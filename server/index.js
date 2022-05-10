@@ -1,6 +1,6 @@
 const express = require("express"),
   app = express(),
-  cors = require('cors'),
+  cors = require("cors"),
   bodyParser = require("body-parser"),
   mysql = require("mysql"),
   DB = mysql.createPool({
@@ -33,7 +33,7 @@ app.post("/api/insert", (request, response) => {
 });
 
 app.get("/api/get", (request, response) => {
-  const sql = `SELECT Movie_name, Movie_desc, Movie_rate, Movie_views, Inserted_at FROM TMovies`;
+  const sql = `SELECT ID, Movie_name, Movie_desc, Movie_rate, Movie_views, Inserted_at FROM TMovies`;
   DB.query(sql, (error, result) => {
     response.send(result);
   });

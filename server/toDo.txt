@@ -5,7 +5,7 @@ npm i nodemon
 // Run the app
 node index
 
+npm i cors
+
 // Run the Development server
 npm run startDev
-
-npm i cors
